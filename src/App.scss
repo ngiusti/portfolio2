@@ -1,0 +1,226 @@
+@import "./styles/reset.scss";
+@import "./constants/constants.scss";
+
+.App {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scene {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #ccc;
+  perspective: 400px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+  transition: transform 1s;
+}
+
+.box__face {
+  position: absolute;
+  border: 10px solid black;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  visibility: hidden;
+}
+
+.box__face--back {
+  width: 100vw;
+  height: 100vh;
+}
+
+.box__face--right,
+.box__face--left {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+}
+
+.box__face--top,
+.box__face--bottom {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.box__face--right {
+  background: linear-gradient(to left, #6b6b6b, #d6d6d6);
+}
+.box__face--back {
+  background-color: rgb(114, 114, 114);
+}
+.box__face--left {
+  background: linear-gradient(to right, #6b6b6b, #d6d6d6);
+}
+.box__face--top {
+  background: linear-gradient(to top, #6b6b6b, #d6d6d6);
+}
+.box__face--bottom {
+  background: linear-gradient(to bottom, #6b6b6b, #d6d6d6);
+}
+
+.box__face--back {
+  transform: rotateY(180deg) translateZ(-200px);
+}
+.box__face--right {
+  transform: rotateY(90deg) translateZ(150px);
+}
+.box__face--left {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+.box__face--top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.box__face--bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.swiper-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100px);
+  animation-duration: 5s;
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes example {
+  0% {
+    transform: translate(-50%, 100px);
+  }
+  50% {
+    transform: translate(-50%, 75px);
+  }
+  100% {
+    transform: translate(-50%, 100px);
+  }
+}
+
+.slide {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  border: 5px solid black;
+  &:nth-of-type(2n) {
+    background-color: black;
+    border: 5px solid white;
+    color: white;
+  }
+}
+
+.slide-copy {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.swiper-container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: -200px;
+  margin-top: -200px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.modal-screen__wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  font-size: 5vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -100vh);
+  transition: all 0.5s;
+}
+
+.skills-modal {
+  transform: translate(0, -100vh);
+}
+
+.about-modal {
+  transform: translate(0, 100vh);
+}
+
+.work-modal {
+  transform: translate(-100vw, 0);
+}
+
+.testimonials-modal {
+  transform: translate(100vw, 0);
+}
+
+.close-wrap {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 5vw;
+  width: 5vw;
+  &:before,
+  &:after {
+    position: absolute;
+    content: " ";
+    height: 5vw;
+    width: 2px;
+    background-color: #333;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.show {
+  transform: translateY(0vw);
+}
+
+.box-image {
+  background-image: url('./assets/box.svg');
+  background-size: 100%, 100%;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+}
+
+@media #{$mq-medium} {
+  .slide {
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+}
