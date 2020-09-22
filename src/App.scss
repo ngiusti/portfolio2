@@ -151,15 +151,14 @@
 
 .modal-screen__wrap {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  overflow: scroll;
   background-color: white;
   font-size: 5vw;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: translate(0, -100vh);
   transition: all 0.5s;
+  padding: 5%;
 }
 
 .skills-modal {
@@ -178,10 +177,13 @@
   transform: translate(100vw, 0);
 }
 
+.modal-content__wrap {
+}
+
 .close-wrap {
-  position: absolute;
-  top: 5%;
-  right: 5%;
+  position: sticky;
+  float: right;
+  top: 0%;
   height: 5vw;
   width: 5vw;
   &:before,
@@ -222,3 +224,6 @@
     background-size: cover;
   }
 }
+
+@import "./styles/testimonials.scss";
+@import "./styles/about.scss";

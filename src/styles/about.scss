@@ -1,0 +1,14 @@
+.about-image__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.about-image-face {
+  height: 100%;
+  width: 100%;
+  display: block;
+}

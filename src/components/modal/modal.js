@@ -25,7 +25,7 @@ export default class modal extends Component {
     return (
       <div>
         <div className='close-wrap' onClick={this.props.toggleModal}></div>
-        {this.renderSwitch()}
+        <div className='modal-content__wrap'>{this.renderSwitch()}</div>
       </div>
     );
   }
