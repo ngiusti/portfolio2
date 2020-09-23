@@ -1,27 +1,27 @@
 import React, { Component } from "react";
 
-import face from "../../assets/people/head.png";
+import photo from "../../assets/people/pointing-up.png";
 
 export default class about extends Component {
   render() {
     return (
-      <div>
-        <h2>About Page</h2>
-        <div>
-          <div>
-            <h2>Web Developer</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
-              amet hendrerit nibh. Nullam eu placerat nunc. Nullam vel lectus eu
-              justo fringilla laoreet eu et elit. Vivamus et lectus sapien.
-              Donec lectus nunc, suscipit sit amet rhoncus ac, cursus a odio.
-              Sed blandit dui leo, ut bibendum nulla maximus sed. Vestibulum non
-              velit nec erat posuere vestibulum vel vitae leo.
-            </p>
+      <div className='modal-inner__wrap'>
+        <h2 className='modal-title'>About</h2>
+        <div className='about-copy__wrap'>
+          <div className='about-page-titles__wrap'>
+            <h2 className='about-page-title'>Web Developer</h2>
+            <h2 className='about-page-title'>Former Chemist</h2>
+            <h2 className='about-page-title'>Dungeon Master</h2>
           </div>
-          <div className='about-image__wrap'>
-            <img className='about-image-face' src={face} />
-          </div>
+          <p className='about-page__copy'>
+            Nicholas Giusti, Web Developer by trade and dungeon master by
+            choice. Been a front end developer for three years now and continue
+            to discover new excitement in my career every day. I'm quite
+            confident in the skills I have and yearn to develpe new ones.
+          </p>
+        </div>
+        <div className='about-image__wrap'>
+          <img src={photo} className='about-image' />
         </div>
       </div>
     );

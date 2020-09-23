@@ -17,8 +17,8 @@ export default class testimonials extends Component {
       );
     });
     return (
-      <div>
-        <h2 className='testimonials-title'>Testimonials</h2>
+      <div className='modal-inner__wrap'>
+        <h2 className='modal-title'>Testimonials</h2>
         <div className='testimonials__wrap'>{testimonials}</div>
       </div>
     );

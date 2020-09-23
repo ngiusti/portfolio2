@@ -7,12 +7,13 @@
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 
 .scene {
   width: 100vw;
   height: 100vh;
-  border: 1px solid #ccc;
+  background-color: #eeeeee;
   perspective: 400px;
   position: absolute;
   top: 0;
@@ -90,6 +91,7 @@
 }
 
 .swiper-wrap {
+  font-family: "Teko", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,21 +179,36 @@
   transform: translate(100vw, 0);
 }
 
+.modal-inner__wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .modal-content__wrap {
+}
+
+.modal-title {
+  font-family: "Teko", sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12vw;
 }
 
 .close-wrap {
   position: sticky;
   float: right;
   top: 0%;
-  height: 5vw;
-  width: 5vw;
+  height: 8vw;
+  width: 10vw;
   &:before,
   &:after {
     position: absolute;
     content: " ";
-    height: 5vw;
-    width: 2px;
+    height: 8vw;
+    width: 5px;
     background-color: #333;
   }
   &:before {
@@ -216,6 +233,10 @@
 }
 
 @media #{$mq-medium} {
+  .modal-title {
+    font-size: 5vw;
+  }
+
   .slide {
   }
 
@@ -223,7 +244,19 @@
     background-position: center;
     background-size: cover;
   }
+
+  .close-wrap {
+    height: 4vw;
+    width: 4vw;
+    &:before,
+    &:after {
+      height: 4vw;
+      width: 5px;
+    }
+  }
 }
 
 @import "./styles/testimonials.scss";
 @import "./styles/about.scss";
+@import "./styles/work.scss";
+@import "./styles//skills.scss";

@@ -1,14 +1,3 @@
-.testimonials__wrap {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.testimonials-title {
-  font-size: 12vw;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .testimonial__wrap {
   display: flex;
   justify-content: space-around;
@@ -29,11 +18,16 @@
 }
 
 .testimonial-name {
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
+  line-height: 100%;
   font-size: 8vw;
 }
 
 .testimonial-relationship {
+  font-family: "Teko", sans-serif;
   font-size: 6vw;
+  line-height: 100%;
 }
 
 .testimonial-quote {
@@ -60,13 +54,10 @@
     margin: 0 auto;
   }
 
-  .testimonials-title {
-    font-size: 5vw;
-  }
-
   .testimonial__wrap {
     margin: 5vw 0;
     border-radius: 20px;
+    padding: 3vw;
     flex-direction: row;
     & * {
       margin: 0.5vw;
@@ -74,7 +65,7 @@
   }
 
   .testimonial-copy__wrap {
-    width: 75%;
+    width: 70%;
     padding: 0 2vw;
   }
 
@@ -91,8 +82,8 @@
   }
 
   .testimonial-image__wrap {
-    width: 20vw;
-    height: 20vw;
+    width: 16vw;
+    height: 16vw;
     margin: 0 auto;
   }
 }
