@@ -5,12 +5,12 @@
   flex-direction: column;
   margin: 10vw 0;
   border-radius: 10px;
-  padding: 5vw;
+  padding: 10vw 5vw;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0px 3px 5.3px rgba(0, 0, 0, 0.048), 2px -2px 10px rgba(0, 0, 0, 0.06),
     -1px 9px 17.9px rgba(0, 0, 0, 0.072);
   & * {
-    margin: 1vw;
+    margin: 3vw 1vw;
   }
 }
 
@@ -35,9 +35,9 @@
 }
 
 .testimonial-image__wrap {
-  width: 20vw;
-  height: 20vw;
-  margin: 0 auto;
+  width: 35vw;
+  height: 35vw;
+  margin: 0 auto 5vw;
 }
 
 .testimonial-image {

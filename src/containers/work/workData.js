@@ -10,7 +10,7 @@ const WORK_DATA = [
     url: "https://www.legnasoftware.com/",
   },
   {
-    company: "Muse of Winsont Salem",
+    company: "Muse of Winston Salem",
     imgUrl: "muse.png",
     url: "https://musews.org/",
   },
