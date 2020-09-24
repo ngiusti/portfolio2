@@ -32,7 +32,7 @@ const TESTIMONIAL_DATA = [
     relationship: "Friend",
     imgUrl: "Shay.jpg",
     quote:
-      "My dramatic foil. My partner in stupidity. What happens when jod abandons all hope and beauty appears. His code is good too",
+      "My dramatic foil. My partner in stupidity. What happens when god abandons all hope and beauty appears. His code is good too",
   },
   {
     name: "Zach Knowles",
