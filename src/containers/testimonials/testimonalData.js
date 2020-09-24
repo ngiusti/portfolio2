@@ -32,7 +32,7 @@ const TESTIMONIAL_DATA = [
     relationship: "Friend",
     imgUrl: "Shay.jpg",
     quote:
-      "My dramatic foil. My partner in stupidity. What happens when god abandons all hope and beauty appears. His code is good too",
+      "Having worked with Nick on many projects and game jams, I have always found Nick's driving curiosity and his passion for beautiful UX's to be a wonderful addition to any task we were undertaking. He is always striving to improve his craft and ensure everyone around him grows as well.",
   },
   {
     name: "Zach Knowles",
