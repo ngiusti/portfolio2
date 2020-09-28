@@ -32,17 +32,8 @@ export default class App extends Component {
         <div className='swiper-wrap'>
           <Swiper triggerModal={this.modalId} />
         </div>
-        <div className='scene'>
+        <div className='box-background'>
           <div className='box-image'></div>
-          <div className='box'>
-            <div className='box__face box__face--back'></div>
-            <div className='box__face box__face--right'></div>
-            <div className='box__face box__face--left'></div>
-            <div className='box__face box__face--top'></div>
-            <div className='box__face box__face--bottom'>
-              <h2>hello</h2>
-            </div>
-          </div>
         </div>
         <div
           className={`modal-screen__wrap ${this.state.show ? "show" : ""} ${

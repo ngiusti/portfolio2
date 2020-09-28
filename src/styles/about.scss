@@ -1,8 +1,8 @@
 .about-image__wrap {
-  position: absolute;
   width: 100%;
   bottom: 0%;
   right: 0;
+  position: absolute;
 }
 
 .about-image {
@@ -11,10 +11,7 @@
 }
 
 .about-copy__wrap {
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-bottom: 50vw;
 }
 
 .about-page-titles__wrap {
@@ -47,11 +44,17 @@
     margin: 2vw;
   }
 
+  .about-copy__wrap {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+
   .about-image__wrap {
-    position: absolute;
-    width: 50%;
-    transform: translateX(25%);
+    width: 60%;
     right: unset;
-    bottom: unset;
+    transform: translateX(20%);
   }
 }
