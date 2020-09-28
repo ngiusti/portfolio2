@@ -158,7 +158,10 @@
 }
 
 .box-background {
+  position: absolute;
   background-color: #eee;
+  height: 100vh;
+  width: 100vw;
 }
 
 @media #{$mq-medium} {
