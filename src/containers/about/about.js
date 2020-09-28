@@ -21,7 +21,7 @@ export default class about extends Component {
           </p>
         </div>
         <div className='about-image__wrap'>
-          <img src={photo} className='about-image' />
+          <img src={photo} className='about-image' alt='Nick' />
         </div>
       </div>
     );

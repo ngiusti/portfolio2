@@ -17,7 +17,7 @@ export default class modal extends Component {
       case "work":
         return <Work />;
       default:
-        return "nothing";
+        return "";
     }
   }
 

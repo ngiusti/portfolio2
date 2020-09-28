@@ -39,7 +39,9 @@ export default class App extends Component {
             <div className='box__face box__face--right'></div>
             <div className='box__face box__face--left'></div>
             <div className='box__face box__face--top'></div>
-            <div className='box__face box__face--bottom'></div>
+            <div className='box__face box__face--bottom'>
+              <h2>hello</h2>
+            </div>
           </div>
         </div>
         <div
