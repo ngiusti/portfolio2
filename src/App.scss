@@ -164,6 +164,21 @@
   width: 100vw;
 }
 
+.home-about__wrap {
+  position: absolute;
+  bottom: 20%;
+  right: 50%;
+  perspective: 900px;
+  font-size: 8vw;
+
+  & h3 {
+    font-weight: bold;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(65deg) translateX(-50%);
+  }
+}
+
 @media #{$mq-medium} {
   .modal-title {
     font-size: 5vw;
@@ -186,6 +201,11 @@
       height: 4vw;
       width: 5px;
     }
+  }
+
+  .home-about__wrap {
+    bottom: 20%;
+    font-size: 5vw;
   }
 }
 

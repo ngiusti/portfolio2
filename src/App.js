@@ -18,6 +18,7 @@ export default class App extends Component {
       modalId: event.target.id,
     });
     this.toggleModal();
+    console.log(event);
   };
 
   toggleModal = () => {
@@ -45,6 +46,9 @@ export default class App extends Component {
             toggleModal={this.toggleModal}
             id='modal'
           />
+        </div>
+        <div className='home-about__wrap'>
+          <h3>Nicholas Giusti</h3>
         </div>
       </div>
     );
