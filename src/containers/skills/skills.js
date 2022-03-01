@@ -15,19 +15,19 @@ export default class skills extends Component {
       <div className='modal-inner__wrap'>
         <h2 className='modal-title'>Skills</h2>
         <div class='skills__wrap'>
-          <Skill title='HTML' duration='3 years'>
+          <Skill title='HTML' duration='4 years'>
             <SiHtml5 />
           </Skill>
-          <Skill title='CSS' duration='3 years'>
+          <Skill title='CSS' duration='4 years'>
             <SiCss3 />
           </Skill>
-          <Skill title='JS' duration='3 years'>
+          <Skill title='JS' duration='4 years'>
             <SiJavascript />
           </Skill>
-          <Skill title='React' duration='1 year'>
+          <Skill title='React' duration='2 year'>
             <SiReact />
           </Skill>
-          <Skill title='React Native' duration='1 year'>
+          <Skill title='React Native' duration='2 year'>
             <SiReact />
           </Skill>
           <Skill title='Firebase' duration='1 year'>
